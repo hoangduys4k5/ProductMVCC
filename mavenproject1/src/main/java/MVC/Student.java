@@ -119,7 +119,7 @@ public class Student {
             // create the java mysql update preparedstatement
             String query = "update student set fullname = ?,"
                     + " sdt = ?,"
-                    + "email = ? where sdt = ?";
+                    + "email = ? where id= ?";
             PreparedStatement preparedStmt = ketnoicsdl.prepareStatement(query);
             preparedStmt.setString(1, this.fullname);
             preparedStmt.setString(2, this.sdt);

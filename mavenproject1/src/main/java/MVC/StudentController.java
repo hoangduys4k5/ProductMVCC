@@ -77,9 +77,23 @@ public class StudentController {
        String sdt = this.view.nhap_sdt_can_sua();
         ArrayList<Student> kq = tim_sv_theo_sdt(students, sdt);
          this.view.ket_qua_tim_kiem_sdt(kq);
-         Student student = this.view.nhap_tt_can_sua();
+         for (Student student : kq){
+             student = this.view.nhap_tt_can_sua();
+         
          student.update_current_student();
         
     }
+      }
+
+ public void xoa_tt_sv_theo_sdt(){
+       String sdt = this.view.nhap_sdt_can_xoa();
+        ArrayList<Student> kq = tim_sv_theo_sdt(students, sdt);
+         for(Student sv: kq){
+            sv.delete_current_student();
+        }
+         
+        
+    }
 }
+
 

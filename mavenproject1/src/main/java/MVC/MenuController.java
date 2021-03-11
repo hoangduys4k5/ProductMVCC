@@ -47,7 +47,7 @@ public class MenuController {
                     break;
                 case 4:
                     st_contrl.hien_thi_danh_sach_sinh_vien();
-                    st_contrl.tim_kiem_sv_theo_sdt();
+                    st_contrl.xoa_tt_sv_theo_sdt();
                     break;    
                 case 5: 
                     flag = false;

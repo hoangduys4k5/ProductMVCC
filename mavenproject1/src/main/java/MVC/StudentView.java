@@ -84,7 +84,16 @@ public class StudentView {
         System.out.println("+++++++++++++++++++++++");
         return sdt;
     }
+      public String nhap_sdt_can_xoa(){
+        System.out.println("+++++++++++++++++++++++");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhap so dien thoai can xoa: ");
+        String sdt = sc.nextLine();
+        System.out.println("+++++++++++++++++++++++");
+        return sdt;
+    }
        public Student nhap_tt_can_sua(){
+         
         System.out.println("++++++++++++++++Nhap thong tin can sua++++++++++++++++++");
         System.out.println("Fullname: ");
         Scanner sc = new Scanner(System.in);
